@@ -1,142 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luxury Cars</title>
-    <link rel="icon" href="img/ico/a8209b7e-ec2b-4d80-8dff-59549fb76087.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<body id="body-form">
-        <header class="header-home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a href="#" class="navbar-brand">
-                    <img class="img-logo" src="img/ico/logo-cenere-cars-w.png" alt="Cenere Cars Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar-start"
-                    aria-controls="navBar-start" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-three-dots" style="font-size: 1.5rem; color: #ffffff;"></i>
+    <link rel="icon" href="img/ico/a8209b7e-ec2b-4d80-8dff-59549fb76087.png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body-form">
+    <header class="header-home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              class="img-logo"
+              src="img/ico/logo-cenere-cars-w.png"
+              alt="Cenere Cars Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navBar-start"
+            aria-controls="navBar-start"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i
+              class="bi bi-three-dots"
+              style="font-size: 1.5rem; color: #ffffff"
+            ></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navBar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ul-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/luxury-cars/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/luxury-cars/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/luxury-cars/gallery.html"
+                  >Cars Gallery</a
+                >
+              </li>
+              <li id="button-login-nav" class="nav-item">
+                <button id="custom-btn-main" class="custom-btn nav-link">
+                  <a class="text-btn-login" href="/luxury-cars/form.html"
+                    >Login</a
+                  >
                 </button>
-                <div class="collapse navbar-collapse" id="navBar-start">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ul-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/luxury-cars/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/luxury-cars/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/luxury-cars/gallery.html">Cars Gallery</a>
-                        </li>
-                        <li id="button-login-nav" class="nav-item">
-                            <button id="custom-btn-main" class="custom-btn nav-link">
-                                <a class="text-btn-login" href="/luxury-cars/form.html">Login</a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li id="button-login-nav" class="nav-item">
+                <button id="custom-btn-main" class="custom-btn nav-link">
+                  <a class="text-btn-login" href="/pages/cart.html">Cart</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <h1 id="title">Welcome to Luxury Cars Rental</h1>
-    <p id="description">Here you will find the best deals made exclusively for you! Complete the form!</p>
-    <main id="main-form" class="container-fluid ">
-        <form id="survey-form">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-12">
-                    <div class="form-group">
-                        <label class="label-enter" id="name-label" for="name">Name: </label>
-                        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name: ">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-enter" id="email-label" for="email">Email: </label>
-                        <input class="form-control" id="email" type="text" name="email" placeholder="Enter your email: ">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-enter" id="number-label" for="number">Age (optional): </label>
-                        <input class="form-control" id="number" type="number" name="number" placeholder="Enter your age: ">
-                    </div>
-                    <div class="form-group">
-                        <label class="label-enter" for="dropdown">What is your favourite feature?</label>
-                        <select class="form-select" id="dropdown" name="feature">
-                            <option value="usability">Usability</option>
-                            <option value="design">Design</option>
-                            <option value="performance">Performance</option>
-                            <option value="support">Customer Support</option>
-                        </select>
-                    </div>
-                    <section class="fieldsets">
-                        <fieldset class="set-service">
-                            <legend class="legend">Choose the Service</legend>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="car-design" name="services" value="car-design">
-                                <label class="form-check-label" for="car-design">Car design</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="car-wash" name="services" value="car-wash">
-                                <label class="form-check-label" for="car-wash">Car Wash</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="car-paint" name="services" value="car-paint">
-                                <label class="form-check-label" for="car-paint">Car Paint</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="car-repair" name="services" value="car-repair">
-                                <label class="form-check-label" for="car-repair">Car Repair</label>
-                            </div>
-                        </fieldset>
-                        
-                        <fieldset class="set-referral">
-                            <legend class="legend">Choose the Referral</legend>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="friend" name="referral" value="friend" required>
-                                <label class="form-check-label" for="friend">Friend</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="publish" name="referral" value="publish" required>
-                                <label class="form-check-label" for="publish">Publish</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="family" name="referral" value="family" required>
-                                <label class="form-check-label" for="family">Family</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" class="form-check-input" id="other" name="referral" value="other" required>
-                                <label class="form-check-label" for="other">Other</label>
-                            </div>
-                        </fieldset>
-                    </section>
-                    <div class="comment-area">
-                        <label class="label-enter" for="comments">Any additional comments:</label>
-                        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button id="submitButton" type="submit" class="btn btn-primary custom-btn w-50">Submit</button>
-                    </div>
-                </div>
+    <div id="title-desc">
+      <h1 id="title">Welcome to Luxury Cars Rental</h1>
+      <p id="description">
+        Here you will find the best deals made exclusively for you! Complete the
+        form!
+      </p>
+    </div>
+    <main id="main-form" class="container-fluid">
+      <form id="survey-form">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12">
+            <div class="form-group">
+              <label class="label-enter" id="name-label" for="name"
+                >Name:
+              </label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your name: "
+              />
             </div>
-        </form>
+            <div class="form-group">
+              <label class="label-enter" id="email-label" for="email"
+                >Email:
+              </label>
+              <input
+                class="form-control"
+                id="email"
+                type="text"
+                name="email"
+                placeholder="Enter your email: "
+              />
+            </div>
+            <div class="form-group">
+              <label class="label-enter" id="number-label" for="number"
+                >Age (optional):
+              </label>
+              <input
+                class="form-control"
+                id="number"
+                type="number"
+                name="number"
+                placeholder="Enter your age: "
+              />
+            </div>
+            <div class="form-group">
+              <label class="label-enter" for="dropdown"
+                >What is your favourite feature?</label
+              >
+              <select class="form-select" id="dropdown" name="feature">
+                <option value="usability">Usability</option>
+                <option value="design">Design</option>
+                <option value="performance">Performance</option>
+                <option value="support">Customer Support</option>
+              </select>
+            </div>
+            <section class="fieldsets">
+              <fieldset class="set-service">
+                <legend class="legend">Choose the Service</legend>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="car-design"
+                    name="services"
+                    value="car-design"
+                  />
+                  <label class="form-check-label" for="car-design"
+                    >Car design</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="car-wash"
+                    name="services"
+                    value="car-wash"
+                  />
+                  <label class="form-check-label" for="car-wash"
+                    >Car Wash</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="car-paint"
+                    name="services"
+                    value="car-paint"
+                  />
+                  <label class="form-check-label" for="car-paint"
+                    >Car Paint</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="car-repair"
+                    name="services"
+                    value="car-repair"
+                  />
+                  <label class="form-check-label" for="car-repair"
+                    >Car Repair</label
+                  >
+                </div>
+              </fieldset>
+
+              <fieldset class="set-referral">
+                <legend class="legend">Choose the Referral</legend>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="friend"
+                    name="referral"
+                    value="friend"
+                    required
+                  />
+                  <label class="form-check-label" for="friend">Friend</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="publish"
+                    name="referral"
+                    value="publish"
+                    required
+                  />
+                  <label class="form-check-label" for="publish">Publish</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="family"
+                    name="referral"
+                    value="family"
+                    required
+                  />
+                  <label class="form-check-label" for="family">Family</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="other"
+                    name="referral"
+                    value="other"
+                    required
+                  />
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+              </fieldset>
+            </section>
+            <div class="comment-area">
+              <label class="label-enter" for="comments"
+                >Any additional comments:</label
+              >
+              <textarea
+                id="comments"
+                name="comments"
+                placeholder="Enter your comments here..."
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                id="submitButton"
+                type="submit"
+                class="btn btn-primary custom-btn w-50"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
     </main>
     <div id="successMessage" class="popup">
-        <p id="popupText"></p>
-        <button id="closePopupButton">Cerrar</button>
+      <p id="popupText"></p>
+      <button id="closePopupButton">Cerrar</button>
     </div>
     <footer class="footer-home">
-        <div class="container-fluid bg-danger custom-footer-bg p-3 mt-4">
-            <div class="row">
-                <div class="col-6 text-center">Todos los derechos reservados ®</div>
-                <div class="col-6 text-center">Luxury Cars Co. Argentina 2025-20xx</div>
-            </div>
+      <div class="container-fluid bg-danger custom-footer-bg p-3 mt-4">
+        <div class="row">
+          <div class="col-6 text-center">Todos los derechos reservados ®</div>
+          <div class="col-6 text-center">
+            Luxury Cars Co. Argentina 2025-20xx
+          </div>
         </div>
+      </div>
     </footer>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
