@@ -837,3 +837,9 @@ button.custom-btn:hover {
         width: 100%;
     }
 }
+
+.openMap {
+    display: flex;
+    justify-content: center;
+    width: 75% !important;
+}

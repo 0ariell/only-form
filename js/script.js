@@ -156,7 +156,7 @@ submitButton.addEventListener("click", function (e) {
     new Promise((resolve, reject) => {
       setTimeout(() => {
         Math.random() > 0.5 ? resolve() : reject(); // 50% de éxito
-      }, 1000);
+      }, 500);
     })
     .then(() => {
       popupText.textContent = "✅ Pedido procesado con éxito!";

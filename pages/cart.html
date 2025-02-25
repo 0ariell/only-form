@@ -1,92 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Cart - Luxury Cars</title>
-    <link rel="icon" href="img/ico/a8209b7e-ec2b-4d80-8dff-59549fb76087.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<body id="body-form">
+    <link rel="icon" href="img/ico/a8209b7e-ec2b-4d80-8dff-59549fb76087.png" />
+    <!-- CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- JS de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="body-form">
     <header class="header-home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a href="#" class="navbar-brand">
-                    <img class="img-logo" src="../img/ico/logo-cenere-cars-w.png" alt="Cenere Cars Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBar-start"
-                    aria-controls="navBar-start" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-three-dots" style="font-size: 1.5rem; color: #ffffff;"></i>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img
+              class="img-logo"
+              src="../img/ico/logo-cenere-cars-w.png"
+              alt="Cenere Cars Logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navBar-start"
+            aria-controls="navBar-start"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i
+              class="bi bi-three-dots"
+              style="font-size: 1.5rem; color: #ffffff"
+            ></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navBar-start">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ul-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/luxury-cars/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/luxury-cars/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/luxury-cars/gallery.html"
+                  >Cars Gallery</a
+                >
+              </li>
+              <li id="button-login-nav" class="nav-item">
+                <button id="custom-btn-main" class="custom-btn nav-link">
+                  <a class="text-btn-login" href="../index.html">Login</a>
                 </button>
-                <div class="collapse navbar-collapse" id="navBar-start">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ul-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/luxury-cars/index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/luxury-cars/about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/luxury-cars/gallery.html">Cars Gallery</a>
-                        </li>
-                        <li id="button-login-nav" class="nav-item">
-                            <button id="custom-btn-main" class="custom-btn nav-link">
-                                <a class="text-btn-login" href="../form.html">Login</a>
-                            </button>
-                        </li>
-                        <li id="button-login-nav" class="nav-item">
-                            <button id="custom-btn-main" class="custom-btn nav-link active">
-                                <a class="text-btn-login" href="/pages/cart.html">Cart</a>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li id="button-login-nav" class="nav-item">
+                <button id="custom-btn-main" class="custom-btn nav-link active">
+                  <a class="text-btn-login" href="/pages/cart.html">Cart</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <div id="title-desc">
-        <h1 id="title">Your Selection</h1>
-        <p id="description">Review your chosen services</p>
+      <h1 id="title">Your Selection</h1>
+      <p id="description">Review your chosen services</p>
     </div>
 
     <main id="main-form" class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8">
-                <div class="cart-container">
-                    <div id="cart-items"></div>
-                    <div class="cart-total">
-                        <h4>Total: $<span id="total-price">0</span></h4>
-                    </div>
-                    <div class="cart-actions">
-                        <button class="custom-btn" onclick="window.location.href='../form.html'">
-                            <i class="bi bi-arrow-left"></i> Add More Services
-                        </button>
-                        <button class="custom-btn" id="checkout-btn">
-                            Checkout <i class="bi bi-credit-card"></i>
-                        </button>
-                    </div>
-                </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <div class="cart-container">
+            <div id="cart-items"></div>
+            <div class="cart-total">
+              <h4>Total: $<span id="total-price">0</span></h4>
             </div>
+            <div class="cart-actions">
+              <button
+                class="custom-btn"
+                onclick="window.location.href='../form.html'"
+              >
+                <i class="bi bi-arrow-left"></i> Add More Services
+              </button>
+              <button class="custom-btn" id="checkout-btn">
+                Checkout <i class="bi bi-credit-card"></i>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div style="width: 75%; margin: 0 auto;">
+        <div
+          id="map"
+          style="width: 100%; height: 400px; margin-top: 40px"
+        ></div>
+      </div>
     </main>
 
     <footer class="footer-home">
-        <div class="container-fluid bg-danger custom-footer-bg p-3 mt-4">
-            <div class="row">
-                <div class="col-6 text-center">Todos los derechos reservados ®</div>
-                <div class="col-6 text-center">Luxury Cars Co. Argentina 2025-20xx</div>
-            </div>
+      <div class="container-fluid bg-danger custom-footer-bg p-3 mt-4">
+        <div class="row">
+          <div class="col-6 text-center">Todos los derechos reservados ®</div>
+          <div class="col-6 text-center">
+            Luxury Cars Co. Argentina 2025-20xx
+          </div>
         </div>
+      </div>
     </footer>
 
     <script src="../js/cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
